@@ -1,6 +1,6 @@
-const elixir = require('laravel-elixir');
+/*const elixir = require('laravel-elixir');
 
-require('laravel-elixir-vue-2');
+require('laravel-elixir-vue-2');  */
 
 /*
  |--------------------------------------------------------------------------
@@ -12,8 +12,17 @@ require('laravel-elixir-vue-2');
  | file for our application, as well as publishing vendor resources.
  |
  */
-
+/*
 elixir(mix => {
     mix.sass('app.scss')
        .webpack('app.js');
+});
+*/
+
+
+var elixir = require('laravel-elixir');
+
+elixir(function(mix) {
+    mix.sass('app.scss')
+       .browserify('app.js');
 });

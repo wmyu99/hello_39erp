@@ -12,9 +12,17 @@ require('./bootstrap');
  * the body of the page. From here, you may begin adding components to
  * the application, or feel free to tweak this setup for your needs.
  */
-
+/*
 Vue.component('example', require('./components/Example.vue'));
 
 const app = new Vue({
     el: '#app'
+});
+*/
+
+window.$ = window.jQuery = require('jquery');
+require('bootstrap-sass');
+
+$(document).ready(function() {
+
 });
