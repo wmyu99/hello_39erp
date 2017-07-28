@@ -25,4 +25,5 @@ Route::post('login','SessionController@store')->name('login');
 Route::delete('logout','SessionController@destory')->name('logout');
 Route::get('/users/{id}/edit','UsersController@edit')->name('users.edit');
 Route::get('singup/confirm/{token}','UsersController@confirmEmail')->name('confirm_email');
+Route::resource('statuses','StatusesController',['only'=>['store','destroy']]);
 //});
